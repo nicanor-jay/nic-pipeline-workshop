@@ -1,1 +1,13 @@
-Test
+name: Yap
+
+on:
+  pull_request:
+    branch:
+      - main
+
+jobs:
+  yap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Yap on pull request
+        run: echo "I noticed you made a pull request!"
